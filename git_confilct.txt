@@ -1,3 +1,0 @@
-git conflict solving
-Edit in Matser Branch
-Edit in TEST Branch
