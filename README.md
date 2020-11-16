@@ -11,7 +11,7 @@ git-project
       CICIDS 2018 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다.
       15개의 공격(Attack) 유형으로 구성되어있다.
       
-      !cicids2018[readme](./git readme/cicids2018[readme].png)
+      !cicids2018[readme](./git_readme/cicids2018[readme].png)
       
       NSL-KDD
       
