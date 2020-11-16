@@ -11,8 +11,7 @@ git-project
   15개의 공격(Attack) 유형으로 구성되어있다.
   
   <div>
-  <img width="200" src="https://user-images.githubusercontent.com/48307173/99228641-3e146f80-2830-11eb-87dd-fbd214f2bd9d.png)
-">
+  <img width="200" src="https://user-images.githubusercontent.com/48307173/99228641-3e146f80-2830-11eb-87dd-fbd214f2bd9d.png")
   </div>
 
       NSL-KDD
