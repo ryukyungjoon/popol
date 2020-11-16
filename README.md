@@ -11,10 +11,8 @@ CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 �
     
     Vector Data
     
-      CICIDS 2018
-      CICIDS 2018 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다.
-      정상(BENIGN)과 비정상(Attack)으로 구성되어있고, 아래 표에서 확인 할 수 있듯이 각 클래스의
-      인스턴스의 극명한 차이를 보이는 불균형 데이터 셋이다.
+      - CICIDS 2018
+      CICIDS 2018 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다. 정상(BENIGN)과 비정상(Attack)으로 구성되어있고, 아래 표에서 확인 할 수 있듯이 각 클래스의 인스턴스의 극명한 차이를 보이는 불균형 데이터 셋이다.
 
 
   15개의 공격(Attack) 유형으로 구성되어있다.
@@ -23,14 +21,14 @@ CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 �
   <img width="200" src="https://user-images.githubusercontent.com/48307173/99228641-3e146f80-2830-11eb-87dd-fbd214f2bd9d.png")
   </div>
 
-      NSL-KDD
+     - NSL-KDD
       s
       
     Image Data
     
-      MNIST
+      - MNIST
       
-      Brain tumor
+      - Brain tumor
       
 
 DATASET URL
