@@ -1,8 +1,8 @@
 # popol
 
-#git-project
+git-project
 
-  Deep Learning Project
+  <Deep Learning Project>
     
     Vector Data
     
@@ -16,3 +16,9 @@
       
       NSL-KDD
       
+
+DATASET URL
+
+	NSL-KDD : https://www.unb.ca/cic/datasets/nsl.html
+
+	CICIDS 2018 : https://www.unb.ca/cic/datasets/ids-2018.html
