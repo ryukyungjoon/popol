@@ -11,36 +11,33 @@ CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 �
     
       - CICIDS 2018
       CICIDS 2018 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다. 
-정상(BENIGN)과 비정상(Attack)으로 구성되어있고, 아래 표에서 확인 할 수 있듯이 각 클래스의 인스턴스의 극명한 차이를 보이는 불균형 데이터 셋이다.
+      정상(BENIGN)과 비정상(Attack)으로 구성되어있고, 아래 표에서 확인 할 수 있듯이 각 클래스의 인스턴스의 극명한 차이를 보이는 불균형 데이터 셋이다.
 
-
-  15개의 공격(Attack) 유형으로 구성되어있다.
-  
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/48307173/99228641-3e146f80-2830-11eb-87dd-fbd214f2bd9d.png")
 </div>
 
      - NSL-KDD
       NSL-KDD 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다.
-KDD99 데이터 셋의 단점을 보완해서 재구성한 데이터 셋으로, 믾은 연구자들 사이에서 벤치마크 데이터 셋으로활용되고 있다.
+      KDD99 데이터 셋의 단점을 보완해서 재구성한 데이터 셋으로, 믾은 연구자들 사이에서 벤치마크 데이터 셋으로활용되고 있다.
       
     Image Data
       - MNIST
+      인공지능 연구의 권위자 Yann LeCun 교수가 만든 MNIST 데이터는 0~9까지의 손글씨 이미지 데이터 셋이다.
+      60,000 개의 훈련 데이터와 10,000개의 테스트 데이터로 데이터 이미지는 모두 28x28 픽셀의 크기로 이루어져있다.
+
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/48307173/99346174-5be8df80-28d7-11eb-9f63-2a6b6687ff0e.png")
  </div>
-
-      인공지능 연구의 권위자 Yann LeCun 교수가 만든 MNIST 데이터는 0~9까지의 손글씨 이미지 데이터 셋이다.
-      60,000 개의 훈련 데이터와 10,000개의 테스트 데이터로 데이터 이미지는 모두 28x28 픽셀의 크기로 이루어져있다.
             
       - Brain tumor
       Brain tumor 데이터 셋은 이진 분류(yes or no) 데이터이다. 각기 다른 크기로 만들어진 이미지이다.
-yes - 155장, no - 98장으로 이루어져있고, 훈련 데이터와 테스트 데이터가 따로 구성되어있지 않아서, 임의로 학습하기 전에 분류하는 작업이 필요한 데이터 셋이다.
+      yes - 155장, no - 98장으로 이루어져있고, 훈련 데이터와 테스트 데이터가 따로 구성되어있지 않아서, 임의로 학습하기 전에 분류하는 작업이 필요한 데이터 셋이다.
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/48307173/99346076-1af0cb00-28d7-11eb-9c51-cb36ec81ce1b.jpg")
 </div>
-
-DATASET URL
+<br></br>
+<h3>DATASET URL</h3>
 
 	NSL-KDD : https://www.unb.ca/cic/datasets/nsl.html
 
