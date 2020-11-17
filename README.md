@@ -1,22 +1,22 @@
 # popol
 
-<h2>INDEX</h2>
-* Deep-Learning_Project
-      /		\
-Image Data
-=== MNIST
-*** brain_tumor
-** Vector Data
-*** CICIDS 2018
-*** NSL-KDD
+<h3>INDEX</h2>
+
+* [Deep-Learning_Project]
+  * [Vector Data]
+	* [CICIDS 2018]
+	* [NSL-KDD]
+  * [Image Data]
+	* [MNIST]
+	* [Brain tumor]
 
   <h3>Deep Learning Project</h3>
-CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 클래스 문제를 지니고 있다.
+<p>CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 클래스 문제를 지니고 있다.
 기계 학습에 있어서 이 두 가지 문제는 성능 저하의 원인이 된다.
 이를 개선하기 위해 데이터 정제 및 전처리부터 학습 알고리즘을 다양하게 적용하는 등 여러 실험을 진행했다.
-
 또한, 이미지 처리에 대한 개념을 익히기 위해 대표적인 이미지 처리 라이브러리 openCV를 활용한 Brain tumor 데이터를 활용한 학습을 수행했다.
-    
+</p>
+
     Vector Data
     
       - CICIDS 2018
@@ -32,7 +32,7 @@ CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 �
       KDD99 데이터 셋의 단점을 보완해서 재구성한 데이터 셋으로, 믾은 연구자들 사이에서 벤치마크 데이터 셋으로활용되고 있다.
 <div>
   <img width="250" height="200" src="https://user-images.githubusercontent.com/48307173/99346887-044b7380-28d9-11eb-8fdc-0d390d5109ae.png">
-  <img width="250" height="200" src="https://user-images.githubusercontent.com/48307173/99347139-a8cdb580-28d9-11eb-95f1-bd65f188a6ec.png">
+  <img width="350" height="200" src="https://user-images.githubusercontent.com/48307173/99347139-a8cdb580-28d9-11eb-95f1-bd65f188a6ec.png">
 </div>
 
     Image Data
@@ -47,7 +47,7 @@ CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 �
             
       - Brain tumor
       Brain tumor 데이터 셋은 이진 분류(yes or no) 데이터이다. 각기 다른 크기로 만들어진 이미지이다.
-      yes - 155장, no - 98장으로 이루어져있고, 훈련 데이터와 테스트 데이터가 따로 구성되어있지 않아서, 임의로 학습하기 전에 분류하는 작업이 필요한 데이터 셋이다.
+      [yes - 155장 || no - 98장]으로 이루어져있고, 훈련 데이터와 테스트 데이터가 따로 구성되어있지 않아서, 임의로 학습하기 전에 분류하는 작업이 필요한 데이터 셋이다.
 <div>
   <img width="250" height="200" src="https://user-images.githubusercontent.com/48307173/99346076-1af0cb00-28d7-11eb-9c51-cb36ec81ce1b.jpg">
 </div>
