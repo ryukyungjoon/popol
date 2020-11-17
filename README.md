@@ -5,10 +5,21 @@
 * [Deep-Learning_Project]
   * [Vector Data]
 	* [CICIDS 2018]
+		* [Feature Selection]
+		* [Feature Correlation]
+		* [DNN]
 	* [NSL-KDD]
+		* [AE]
+		* [CNN]
+		* [DNN]
+		* [LSTM]
+		* [SIAMESE]
   * [Image Data]
 	* [MNIST]
+		* [AE]
+		* [SIAMESE]
 	* [Brain tumor]
+		* [CNN]
 
   <h3>Deep Learning Project</h3>
 <p>CICIDS 데이터와 NSL-KDD 데이터는 데이터 불균형 문제와 희소 클래스 문제를 지니고 있다.
@@ -26,6 +37,17 @@
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/48307173/99228641-3e146f80-2830-11eb-87dd-fbd214f2bd9d.png">
 </div>
+
+CICIDS 2018 데이터 셋의 성능 개선을 위한 실험 구조도
+
+* [데이터 입력]-[데이터 정제]-[특징선택]-[정규화]-[신경망 훈련]-[분류]
+
+<div>
+<p>
+<img width="1000" height="300"  src="https://user-images.githubusercontent.com/48307173/99352408-ecc6b780-28e5-11eb-82ad-9993fedf8763.png">
+</p>
+</div>
+
 
      - NSL-KDD
       NSL-KDD 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다.
