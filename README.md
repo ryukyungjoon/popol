@@ -51,7 +51,7 @@ CICIDS 2018 데이터 셋의 성능 개선을 위한 실험 구조도
 
      - NSL-KDD
       NSL-KDD 데이터 셋은 네트워크 정상 및 비정상 트래픽 데이터로 이루어진 데이터 셋이다.
-      KDD99 데이터 셋의 단점을 보완해서 재구성한 데이터 셋으로, 믾은 연구자들 사이에서 벤치마크 데이터 셋으로활용되고 있다.
+      KDD99 데이터 셋의 단점을 보완해서 재구성한 데이터 셋으로, 믾은 연구자들 사이에서 벤치마크 데이터 셋으로 활용되고 있다.
 <div>
   <img width="250" height="200" src="https://user-images.githubusercontent.com/48307173/99346887-044b7380-28d9-11eb-8fdc-0d390d5109ae.png">
   <img width="350" height="200" src="https://user-images.githubusercontent.com/48307173/99347139-a8cdb580-28d9-11eb-95f1-bd65f188a6ec.png">
