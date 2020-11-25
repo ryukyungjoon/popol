@@ -10,7 +10,6 @@
 		* [Feature Selection]
 		* [Feature Correlation]
 		* [DNN]
-
 	* [NSL-KDD]
 		* [AE]
 		* [CNN]
@@ -23,7 +22,6 @@
 	* [MNIST]
 		* [AE]
 		* [SIAMESE]
-	
 	* [Brain tumor]
 		* [CNN]
 
