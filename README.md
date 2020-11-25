@@ -3,21 +3,27 @@
 <h3>INDEX</h2>
 
 * [Deep-Learning_Project]
+
   * [Vector Data]
+  
 	* [CICIDS 2018]
 		* [Feature Selection]
 		* [Feature Correlation]
 		* [DNN]
+
 	* [NSL-KDD]
 		* [AE]
 		* [CNN]
 		* [DNN]
 		* [LSTM]
 		* [SIAMESE]
+  
   * [Image Data]
+
 	* [MNIST]
 		* [AE]
 		* [SIAMESE]
+	
 	* [Brain tumor]
 		* [CNN]
 
