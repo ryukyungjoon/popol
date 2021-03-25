@@ -11,6 +11,7 @@ from matplotlib import pyplot as plt
 
 import tensorflow as tf
 from tensorflow.keras import backend as K
+
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 session = tf.Session(config=config)
@@ -19,15 +20,12 @@ import numpy as np
 import pandas as pd
 import numpy.random as random
 
-from Drawing import Drawing as dw
-
 class CNN:
     def __init__(self, train_x, test_x, train_y, test_y):
         self.train_x = train_x
         self.test_x = test_x
         self.train_y = train_y
         self.test_y = test_y
-
 
         self.input_shape = self.train_x.shape
         self.num_classes = 5
@@ -56,7 +54,6 @@ class CNN:
         self.x = [x.shape[0] for x in self.train_groups]
         self.z = [x.shape[0] for x in self.test_groups]
 
-        # Feature Vector Network(CNN) 구성
         convnet = Sequential([
             Conv1D(filters=256, kernel_size=3, input_shape=(122, 1)),
             Activation('relu'),
@@ -85,19 +82,21 @@ class CNN:
         self.conv_ids.compile(optimizer=adam, loss='categorical_crossentropy', metrics=['acc'])
         self.conv_ids.summary()
 
+    def draw_loss_graph(self, history, title):
+        loss = history.history['loss']
+        val_loss = history.history['val_loss']
+        epochs = range(len(loss))
+        plt.plot(epochs, loss, 'bo', label='Training loss')
+        plt.plot(epochs, val_loss, 'b', label='Validation loss')
+        plt.title(title)
+        plt.legend()
+        plt.show()
+
     def main(self):
         loss_history = self.conv_ids.fit(self.train_x, self.Onehot_train_Y2,
                                          batch_size=32, epochs=100, verbose=1,
                                          validation_split=0.2)
-        loss = loss_history.history['loss']
-        val_loss = loss_history.history['val_loss']
-        epochs = range(len(loss))
-        plt.plot(epochs, loss, 'bo', label='Training loss')
-        plt.plot(epochs, val_loss, 'b', label='Validation loss')
-        plt.title('Convolutional Neural Network Training and Validation loss')
-        plt.legend()
-        plt.show()
-
+        self.draw_loss_graph(loss_history, title='Convolutional Neural Network Training and Validation loss')
         classes_y = np.unique(self.test_y)
         print(classes_y)
 
@@ -122,8 +121,33 @@ class CNN:
         print(str(report))
 
 
-if __name__=='__main__':
+class Drawing:
+    def __init__(self):
+        pass
 
+    def print_confusion_matrix(self, confusion_matrix, class_names, normalize=None, figsize=(15, 15), fontsize=15):
+        df_cm = pd.DataFrame(confusion_matrix, index=class_names, columns=class_names,)
+        plt.figure(figsize=figsize)
+        if normalize:
+            df_cm = confusion_matrix.astype('float') / confusion_matrix.sum(axis=1)[:, np.newaxis]
+            fmt = '.2f'
+            print("Normalized confusion matrix")
+        else:
+            fmt = 'd'
+            print('Confusion matrix, without normalization')
+
+        try:
+            heatmap = sns.heatmap(df_cm, cmap='Blues', annot=True, fmt=fmt, robust=True,
+                                  linewidths=.5, annot_kws={"size": 15})
+        except ValueError:
+            raise ValueError("Confusion matrix values must be integers.")
+        heatmap.yaxis.set_ticklabels(heatmap.yaxis.get_ticklabels(), rotation=0, ha='right', fontsize=fontsize)
+        heatmap.xaxis.set_ticklabels(heatmap.xaxis.get_ticklabels(), rotation=45, ha='right', fontsize=fontsize)
+        plt.ylabel('True label')
+        plt.xlabel('Predicted label')
+        plt.show()
+
+if __name__ == '__main__':
     data_path = "../dataset/NSL-KDD/"
 
     nsl_tr_data = "qnt_KDDTrain_category"
@@ -135,21 +159,24 @@ if __name__=='__main__':
 
     train_y, train_x = train_data['outcome'], train_data.drop('outcome', 1)
     test_y, test_x = test_data['outcome'], test_data.drop('outcome', 1)
-    # features = train_x.head(0)
-    # train_dic = {
-    #     'normal': 1000,
-    #     'Probe': 1000,
-    #     'DoS': 1000,
-    # }
-    #
-    # print("Data Resampling...")
-    #
-    # train_sm = RandomUnderSampler(sampling_strategy=train_dic, random_state=0)
-    # a, b = train_sm.fit_sample(train_x, train_y)
-    #
-    # label = ['outcome']
-    # train_x = pd.DataFrame(a, columns=list(features))
-    # train_y = pd.DataFrame(b, columns=list(label))
+    """     
+    '''UNDER-SAMPLING METHOD'''
+    features = train_x.head(0)
+    train_dic = {
+        'normal': 1000,
+        'Probe': 1000,
+        'DoS': 1000,
+    }
+
+    print("Data Resampling...")
+
+    train_sm = RandomUnderSampler(sampling_strategy=train_dic, random_state=0)
+    a, b = train_sm.fit_sample(train_x, train_y)
+
+    label = ['outcome']
+    train_x = pd.DataFrame(a, columns=list(features))
+    train_y = pd.DataFrame(b, columns=list(label))
+    """
     train_x = np.array(train_x)
     test_x = np.array(test_x)
 
