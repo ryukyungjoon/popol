@@ -21,7 +21,6 @@ class DataTransformer:
     def FS_Wrapper(self, df_train, df_test, fs_type=None, features=None):
         if fs_type == 'rf':
             self.fs_model = RandomForestClassifier(random_state=42, n_estimators=10, n_jobs=-1)
-
         elif fs_type == 'xg':
             self.fs_model = XGBClassifier()
         self.fs_model.fit(df_train_num, train_y)
