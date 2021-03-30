@@ -82,17 +82,17 @@ class Autoencoder_Test():
         data_format_txt = ".txt"
 
         print("Data Loading...")
-        # data = pd.read_csv(data_loc + data_file + data_format, sep=',', dtype='unicode')
-        train_X, train_Y = ds._load_data_txt(data_loc+train_data_file+data_format_txt)
-        test_X, test_Y = ds._load_data_txt(data_loc+test_data_file+data_format_txt)
+        data = pd.read_csv(data_loc + data_file + data_format, sep=',', dtype='unicode')
+        # train_X, train_Y = ds._load_data_txt(data_loc+train_data_file+data_format_txt)
+        # test_X, test_Y = ds._load_data_txt(data_loc+test_data_file+data_format_txt)
         features = train_X.head(0)
         re, rc = train_Y.factorize()
 
-        # sb = Semi_balancing()
-        # bal_train = sb.nsl_sampling_1(train_X, train_Y, features, sampling_strategy='train')
+        sb = Semi_balancing()
+        bal_train = sb.nsl_sampling_1(train_X, train_Y, features, sampling_strategy='train')
 
-        # train_Y, train_X = bal_train["outcome"], bal_train.drop("outcome", 1)
-        # print(train_X)
+        train_Y, train_X = bal_train["outcome"], bal_train.drop("outcome", 1)
+        print(train_X)
         train_X = np.array(train_X)
         test_X = np.array(test_X)
 
@@ -104,6 +104,7 @@ class Autoencoder_Test():
         print(np.unique([train_Y]))
         print(train_Y)
 
+        ''' One-hot Encoding '''
         Onehot_train_Y2 = to_categorical(y_train, num_classes=self.num_classes)
         Onehot_test_Y2 = to_categorical(y_test, num_classes=self.num_classes)
         print('Original Data : {}'.format(train_Y))
@@ -112,12 +113,12 @@ class Autoencoder_Test():
         print('\nOne-Hot Result from Y_Test : \n{}'.format(Onehot_test_Y2))
 
         # Model's folder Making and file Saving
-        # MODEL_SAVE_FOLDER_PATH = '../dataset/fin_dataset/model_checkpoint/'
-        # if not os.path.exists(MODEL_SAVE_FOLDER_PATH):
-        #     os.mkdir(MODEL_SAVE_FOLDER_PATH)
-        # model_path = MODEL_SAVE_FOLDER_PATH + '{epoch:02d}-{val_loss:.4f}.hdf5'
-        # cb_checkpoint = ModelCheckpoint(filepath=model_path, monitor='val_loss',
-        #                                 verbose=1, save_best_only=True)
+        MODEL_SAVE_FOLDER_PATH = '../dataset/fin_dataset/model_checkpoint/'
+        if not os.path.exists(MODEL_SAVE_FOLDER_PATH):
+            os.mkdir(MODEL_SAVE_FOLDER_PATH)
+        model_path = MODEL_SAVE_FOLDER_PATH + '{epoch:02d}-{val_loss:.4f}.hdf5'
+        cb_checkpoint = ModelCheckpoint(filepath=model_path, monitor='val_loss',
+                                        verbose=1, save_best_only=True)
 
 
         # Call-back Early Stopping!
@@ -127,7 +128,7 @@ class Autoencoder_Test():
         autoencoder_train = self.autoencoder_model.fit(train_X, train_X, epochs=self.epochs,
                                                        batch_size=self.batch_size, validation_split=0.2,
                                                        callbacks=[cb_early_stopping])
-
+        # Autoencoder loss function graph
         loss = autoencoder_train.history['loss']
         val_loss = autoencoder_train.history['val_loss']
         epochs = range(len(loss))
@@ -137,6 +138,7 @@ class Autoencoder_Test():
         plt.legend()
         plt.show()
 
+        # encoder Freezing & Transfer Weights
         for i, layer in enumerate(self.full_model.layers[0:7]):                     # Weights Transfer & Freeze , 7 is encoder layers num
             layer.set_weights(self.autoencoder_model.layers[i].get_weights())
             layer.trainable = False
@@ -146,6 +148,7 @@ class Autoencoder_Test():
         print('== Full Model Start ==')
         print(train_X.shape, Onehot_train_Y2.shape)
 
+        # Encoder Weights Load & Traning Full Model
         classify_train = self.full_model.fit(train_X, Onehot_train_Y2, batch_size=self.batch_size, epochs=self.epochs,
                                              verbose=1, validation_split=0.2, callbacks=[cb_early_stopping])
         dw.loss_acc_graph(classify_train)
@@ -164,10 +167,10 @@ class Autoencoder_Test():
         print(f'full_model Training Time{end-start}')
 
         # Save Weights & Model
-        # self.full_model.save_weights('NSL-KDD_full_model_weights_qnt')
-        # full_model_json = self.full_model.to_json()
-        # with open('NSL-KDD_full_model_qnt.json', 'w') as json_file:
-        #     json_file.write(full_model_json)
+        self.full_model.save_weights('NSL-KDD_full_model_weights_qnt')
+        full_model_json = self.full_model.to_json()
+        with open('NSL-KDD_full_model_qnt.json', 'w') as json_file:
+            json_file.write(full_model_json)
 
         # Performance Visualization
         dw.loss_acc_graph(unFreeze_classify_train)

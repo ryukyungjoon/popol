@@ -272,7 +272,7 @@ class Traninng:
         self.model = None
         self.batch_size = batch_size
         self.learning_rate = 0.01
-        self.optimizer = Adam()
+        self.optimizer = Adam(lr=self.learning_rate)
         self.epochs = epoch
 
         if model_name == 'dnn':
