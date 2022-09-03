@@ -2,7 +2,8 @@
 
 <h3>INDEX</h2>
 
-* [Deep-Learning_Project]
+* AI-project
+[Deep-Learning_Project]
 
 ### Preprocessing
 
