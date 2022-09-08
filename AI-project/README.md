@@ -1,44 +1,10 @@
-# AI-project
+<h1>AI-project</h1>
 
-## Deep-Learning_Project
+MILAB
+ 세종대학교 일반대학원 MILAB에서 사이버전특화연구실 과제를 수행하며 CALOT 프레임워크의 NIDS(Network based Intrusion Detection)를 위한 연구 수행
 
-### Preprocessing
-
-- **Sampling Method**
-    - SMOTE(Synthetic Minority Over-sampling Technique)
-    - RandomUnderSampling
-    - Borderline SMOTE
-
-- **Normalization Method**
-    - Min-max Scaler
-    - Standard Scaler
-    - Quantile Transformer
-    - Vec2img
-
-- **Feature Selection or Feature Extraction Method**
-    - PCA(Principal Component Analysis)
-    - Pearson Correlation
-    - Spearman Correlation
-    - RandomForest
-    - XGBoost(eXtream Gradient Boosting)
-
-### Training Model
-
-- **Classification Model**
-    - Stocastic Gradient Descent
-    - Perceptron
-    - Multi Layer Perceptron
-    - Deep Neural Network(Dense)
-    - AutoEncoder(Freezing)
-    - LSTM(Long Short Term Memory)
-    - Convolutional Neural Network(1D, 2D)
-    - Convolutional Siamese Neural Network
-    - Deep Siamese Neural Network
-  
-<h3>DATASET URL</h3>
-
-	NSL-KDD : https://www.unb.ca/cic/datasets/nsl.html
-
-	CICIDS 2018 : https://www.unb.ca/cic/datasets/ids-2018.html
-	
-	Brain tumor : https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection
+SmartDiagnosis
+ 1.Optical_Flow
+ 2.CardiVu-A
+ 3.Cardivu-D
+ 4.SuperResolution              
