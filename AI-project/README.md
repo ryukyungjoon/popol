@@ -1,6 +1,6 @@
 # AI-project
 
-[Deep-Learning_Project]
+## Deep-Learning_Project
 
 ### Preprocessing
 
