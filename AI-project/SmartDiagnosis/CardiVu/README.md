@@ -22,6 +22,5 @@
 <br><span><맥박수 65BPM이상 90BPM 미만 데이터의 상관관계 비교></span><br>
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/48307173/189303900-3632c076-35c5-4b33-915e-64390869353a.png">
 <br><span><맥박수 65BPM 미만 데이터의 상관관계 비교></span><br>
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/48307173/189303961-2dc94220-0857-4c2f-9ac5-2d8c0352ebb0.png">
-<br><span><맥박수 계산에 사용된 모델의 성능을 확인할 수 있는 근거자료(모델 학습 시 활용한 검증 데이터(validation data)를 통해 얻은 결과></span><br>
-<img width="695" alt="스크린샷 2022-09-09 오후 5 19 52" src="https://user-images.githubusercontent.com/48307173/189305380-bfb9ecaf-74ae-4b4a-b119-fa8f85d08858.png">
+<br><span><맥박수 계산에 사용된 모델의 성능을 확인할 수 있는 근거자료(모델 학습 시 활용한 검증 데이터(validation data)를 통해 얻은 결과)></span><br>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48307173/189303961-2dc94220-0857-4c2f-9ac5-2d8c0352ebb0.png"><img width="695" alt="스크린샷 2022-09-09 오후 5 19 52" src="https://user-images.githubusercontent.com/48307173/189305380-bfb9ecaf-74ae-4b4a-b119-fa8f85d08858.png">
