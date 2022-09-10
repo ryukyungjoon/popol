@@ -5,6 +5,10 @@
 
 # CardiVu preprocessing project
 
+- 홍채 미세근육 움직임 데이터를 얻기 위한 과정은 그림과 같다.
+<br>
+<img width="900" alt="홍채 미세근육 데이터 추출과정" src="https://user-images.githubusercontent.com/48307173/189474251-759df152-aace-4f95-8b75-d556e28e1337.png">
+<br>
 - main.py를 실행하면 전처리 프로젝트를 실행한다.
 - 영상 파일 선택, 영상처리 함수 Threshold 설정
 - 해상도가 낮은 영상을 매 프레임마다 Super Resolution(초해상화) 과정을 통해 고해상도로 높인다.
