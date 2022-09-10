@@ -4,8 +4,6 @@
 
 - 동공 반응이 명확하게 나타나지 않아, 눈 깜박임이라는 조건을 추가하여 실험
 - 동공 반응에 의한 홍채 근육 움직임을 가장 잘 표현하는 Optical Flow 함수를 선정.<br>
-https://user-images.githubusercontent.com/48307173/189474366-c957271a-c8e6-49cd-bad7-d17b0d9fddc8.mp4
 
-
-
+https://user-images.githubusercontent.com/48307173/189474498-082688a7-7bc1-41a2-8b61-85888276b21c.mp4
 
