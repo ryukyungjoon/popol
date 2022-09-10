@@ -16,7 +16,6 @@
   - 분당 서울대병원과 협력해 우울증 환자군을 모집하고, 알바몬을 통해 대조군을 모집하여 실험 진행.
  </p>
  
- <p>* Optical_Flow</p>
+ <p>* CardiVu</p>
  <p>* CardiVu-A</p>
  <p>* Cardivu-D</p>
- <p>* SuperResolution</p>
