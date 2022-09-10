@@ -19,8 +19,13 @@ https://user-images.githubusercontent.com/48307173/189474498-082688a7-7bc1-41a2-
  => 0.2sec ~ 0.5sec 차이(60fps기준 12~30Frame의 차이를 보임)<br>
 ![알코올 섭취 여부에 따른 동공 반응 시간 측정 결과](https://user-images.githubusercontent.com/48307173/189481358-39947466-a88b-4d9a-9cea-1582f584f7ee.png)
 
-
+- 더 많은 데이터로 비교연구 하기 위해 사내에서 실험을 진행했다.
+- 피험자 A, B, C, D는 아래와 같은 결과를 얻었다.
 <img width="1000" height="300" alt="스크린샷 2022-09-10 오후 9 00 30" src="https://user-images.githubusercontent.com/48307173/189482338-0adfba48-ff02-4296-96bb-e8f6197e1616.png">
 <img width="1000" height="300" alt="스크린샷 2022-09-10 오후 9 01 56" src="https://user-images.githubusercontent.com/48307173/189482385-d1c2b5c8-fd9c-4326-b3c9-618f4d077921.png">
 <img width="1000" height="300" alt="스크린샷 2022-09-10 오후 9 04 18" src="https://user-images.githubusercontent.com/48307173/189482470-cf97b077-63ee-481f-ae94-fbf2029dd42e.png">
 <img width="1000" height="300" alt="스크린샷 2022-09-10 오후 9 17 07" src="https://user-images.githubusercontent.com/48307173/189482997-d2d7873c-cce4-4a4c-a106-0a2655ee9019.png">
+
+- 수축시간, 회복시간에서 일정하지 못한 결과가 발생했다.
+- 이러한 결과로 인해 회사 사정상 더이상 연구를 진행하기 어려워 중단되었다.
+- 해당 연구에 참고한 논문의 예측 정확도는 85%였고, 눈을 감았다 떴을 때 회복까지 눈을 뜬 상태로 유지도 해야하고, 알코올 섭취량, 섭취 후 경과시간 등 통제해야할 변인들이 많았지만 그렇지 못했고 연구자 입장에서 아쉬운 과정 및 결과로써 마무리하게 되었다.
