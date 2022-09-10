@@ -7,3 +7,13 @@
 
 https://user-images.githubusercontent.com/48307173/189474498-082688a7-7bc1-41a2-8b61-85888276b21c.mp4
 
+- 움직임을 가장 잘 표현한 DeepFlow 함수를 알코올 섭취 전, 후 빛에 대해 홍채 근육의 적응 시간을 보고자 실험을 진행했다.
+![DeepFlow Eyeblinking](https://user-images.githubusercontent.com/48307173/189474780-525cf5eb-7330-4497-8bd0-05e7261affde.png)
+
+- 음주 전, 후 왼쪽 눈과 오른쪽 눈의 홍채 움직임을 평균, 표준편차, 분산, 수축 및 회복시간(Frame)을 지표로 평가했다.
+
+
+### RGB카메라를 이용해 촬영한 영상에서는 색상성분을 이용한 데이터 추출 방법을 사용했다.
+
+- 눈깜박임을 이상치(Outlier)로 판단하여 제거하고 Logistic Regression, LDA, KNN, CART, NaiveBayes 등 머신러닝 알고리즘을 활용하여 알코올 판단 알고리즘을 구현했다.
+- pupil size & 색상성분으로 이진분류(Binary Classification)를 진행했다.
