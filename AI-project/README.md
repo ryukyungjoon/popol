@@ -4,7 +4,13 @@
  <p>세종대학교 일반대학원 MILAB에서 사이버전특화연구실 과제를 수행하며 CALOT 프레임워크의 NIDS(Network based Intrusion Detection)를 위한 연구 수행</p>
 
 * CICIDS-2018
+ - CICIDS_IDS.py
+ 
 * NSL-KDD
+ - AE(AutoEncoder)
+ - CNN(Convolutional Neural Network)
+ - LSTM(Long Short Term Memory)
+ - SIAMESE(Siamese Neural Network)
 
 <h3>[SmartDiagnosis]</h3>
  <p> 
@@ -17,5 +23,12 @@
  </p>
  
  * CardiVu
+  - modeling
+  - preprocessing
+  
  * CardiVu-A
+  - modeling
+  - preprocessing
+  
  * Cardivu-D
+  - Life_logging.py
