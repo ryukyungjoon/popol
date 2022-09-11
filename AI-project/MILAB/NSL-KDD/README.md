@@ -1,16 +1,16 @@
 ### Preprocessing
 
-- **Sampling Method**
+- Sampling Method
     - SMOTE(Synthetic Minority Over-sampling Technique)
     - RandomUnderSampling
 
-- **Normalization Method**
+- Normalization Method
     - Min-max Scaler
     - Standard Scaler
     - Quantile Transformer
     - Vec2img
 
-- **Feature Extraction**
+- Feature Extraction
     - AutoEncoder
     - Pearson
     - Spearman
@@ -19,7 +19,7 @@
 
 ### Tranining
 
-- **Classification Model
+- Classification Model
     - vanila AutoEncoder
     - AutoEncoder(Freezing)
     - LSTM(Long Short Term Memory)
