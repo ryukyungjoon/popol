@@ -18,9 +18,9 @@
 [Super Resolution을 이용해서 사이즈 늘린 사진]
 <img width="334" alt="image" src="https://user-images.githubusercontent.com/48307173/189480701-b0b76678-8995-44b8-bb4c-3dfb7c4ed841.png">
 
-[OpenCV 영상처리 보간법 함수를 이용해서 사이즈 늘린 사진]
+[OpenCV 영상처리 보간법 함수를 이용해서 사이즈 늘린 사진]<br>
 <img width="138" alt="image" src="https://user-images.githubusercontent.com/48307173/189480613-7745f65e-0762-4037-a77c-8bb9695471f9.png">
-[Super Resolution을 이용해서 사이즈 늘린 사진]
+[Super Resolution을 이용해서 사이즈 늘린 사진]<br>
 <img width="138" alt="image" src="https://user-images.githubusercontent.com/48307173/189480630-5bf55eba-aecb-4f4d-893a-47fd00a7f575.png">
 
 
